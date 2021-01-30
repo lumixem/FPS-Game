@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FootstepDzwieki : MonoBehaviour
+public class FootstepSounds : MonoBehaviour
 {    
     public AudioClip[] audioArray;   
     public Transform player;
@@ -34,7 +34,7 @@ public class FootstepDzwieki : MonoBehaviour
         AudioSource audio = GetComponent<AudioSource>();
         if (!audio.isPlaying)
         {
-            audio.clip = tablica[Random.Range(0, tablica.Length)];
+            audio.clip = tablica[Random.Range(0, audioArray.Length)];
             audio.Play();
         }
     }
