@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrzybGenerator : MonoBehaviour
+public class ShroomGenerator : MonoBehaviour
 {
     public int enemyCount;
     float noSpawnRange = 2;
