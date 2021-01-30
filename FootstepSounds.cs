@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FootstepDzwieki : MonoBehaviour
 {    
-    public AudioClip[] tablica;   
+    public AudioClip[] audioArray;   
     public Transform player;
 
     bool playerMovement
@@ -22,12 +22,7 @@ public class FootstepDzwieki : MonoBehaviour
     }
 
     void Update()
-    {
-        //if (transform.hasChanged)
-        //{
-        //    playAudio();
-        //}   
-
+    {       
         if (playerMovement)
         {
             playAudio();
@@ -43,5 +38,4 @@ public class FootstepDzwieki : MonoBehaviour
             audio.Play();
         }
     }
-
 }
