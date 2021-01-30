@@ -26,16 +26,10 @@ public class GameOverManager : MonoBehaviour
    
     public void GameEnded()
     {
-        Debug.Log("GameOver");
-        //Object.Destroy(player);
+        Debug.Log("GameOver");        
         SceneManager.LoadScene(3);
         Cursor.visible = true;
-    }
-
-    //void RestartGame()
-    //{     
-    //        SceneManager.LoadScene(0);
-    //}
+    }   
 }
 
 
